@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'NorseBold';
+  src: url('fonts/Norse-Bold.otf') format('opentype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  background: url('images/background.jpg') center/cover no-repeat;
+  flex: 1;
+  position: relative;
+  color: white;
+}
+
+.logo {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  margin-top: 20vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.logo h1 {
+  font-family: 'NorseBold', serif;
+  font-size: 64px;
+  color: white;
+}
+
+.photo-credit {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.right {
+  background-color: #f9fafb;
+  flex: 2;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.final-line {
+  margin-top: 1.5rem; /* Adjust spacing as needed */
+}
+
+form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  outline: none;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+button {
+  background-color: #596D48;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.login {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
